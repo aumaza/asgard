@@ -1,0 +1,17 @@
+The system is: Linux - sh: 0: getcwd() failed: No such file or directory
+5.10.0-19-amd64 - sh: 0: getcwd() failed: No such file or directory
+x86_64
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /mnt/sda3/projects/C/asgard/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_b0a6a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b0a6a.dir/build.make CMakeFiles/cmTC_b0a6a.dir/build
+gmake[1]: Entering directory '/mnt/sda3/projects/C/asgard/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b0a6a.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b0a6a.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.18/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_b0a6a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0a6a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_b0a6a.dir/CMakeCCompilerABI.c.o -o cmTC_b0a6a 
+gmake[1]: Leaving directory '/mnt/sda3/projects/C/asgard/build/CMakeFiles/CMakeTmp'
+
+
+

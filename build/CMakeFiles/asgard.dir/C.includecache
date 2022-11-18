@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/sda3/projects/C/asgard/lib.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+math.h
+-
+conio.h
+-
+lib.h
+/mnt/sda3/projects/C/asgard/lib.h
+
+/mnt/sda3/projects/C/asgard/lib.h
+

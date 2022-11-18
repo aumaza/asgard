@@ -1,0 +1,7 @@
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/install/strip.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/install/local.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/install.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/list_install_components.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/rebuild_cache.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/edit_cache.dir
+/mnt/sda3/projects/C/asgard/build/CMakeFiles/asgard.dir

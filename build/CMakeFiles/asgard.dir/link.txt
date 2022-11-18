@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/asgard.dir/main.c.o CMakeFiles/asgard.dir/lib.c.o CMakeFiles/asgard.dir/ArrayList.c.o -o asgard 

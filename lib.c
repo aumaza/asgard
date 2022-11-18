@@ -18,6 +18,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
+#include <conio.h>
 #include "lib.h"
 
 void mapGenerator(int x, int y){
@@ -54,16 +55,12 @@ float randomNumber(int x, int y){
 void *createMap (char* path, int x, int y ){
     
      srand(time(NULL));
+     float** pArrays = calloc(x, sizeof(float*));
+     FILE* fp;
+     fp = fopen(path,"w+");
+    
      
-    FILE* fp;
-    fp = fopen(path,"w+");
-    const char EndOfLine[] = "\n";
-           
-    float** pArrays = calloc(x, sizeof(float*));
-  
-  
-  
-    if(!pArrays && !fp){
+    if(!pArrays){
         printf("Failure to Allow Memory!");
     }else{
     
@@ -73,19 +70,18 @@ void *createMap (char* path, int x, int y ){
         
         for(int j = 1; j <= y; ++j){
                                 
-            //printf("[%5.2f] ", pArrays[i][j] = rand() % 85 + (noise(i,j) + noise(i,j)));
             fprintf(fp,MASC,pArrays[i][j] = rand() % 85 + (noise(i,j) + noise(i,j)));
             
         }
         
-        //printf("\n");
+        fprintf(fp,"\n");
     }
     
         fclose(fp);
     }
     
-    //return pArrays;
 }
+
 
 
 
