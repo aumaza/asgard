@@ -18,7 +18,7 @@
 #ifndef __LIB_H__
 #define __LIB_H__
 
-#define MASC "%5.2f,%5.2f,%5.2f,%5.2f,%5.2f\n"
+#define MASC "%5.2f\n"
 
 struct map{
     int fila;

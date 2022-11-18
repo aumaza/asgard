@@ -56,28 +56,35 @@ void *createMap (char* path, int x, int y ){
      srand(time(NULL));
      
     FILE* fp;
-    fp = fopen(path,"w");
-    
+    fp = fopen(path,"w+");
+    const char EndOfLine[] = "\n";
+           
     float** pArrays = calloc(x, sizeof(float*));
-    
+  
+  
+  
     if(!pArrays && !fp){
         printf("Failure to Allow Memory!");
     }else{
     
-    for(int i = 1; i <= x; ++i){
+        for(int i = 1; i <= x; ++i){
         
         pArrays[i] = malloc(y * sizeof(float));
         
         for(int j = 1; j <= y; ++j){
-           
-            printf("[%5.2f] ", pArrays[i][j] = rand() % 85 + (noise(i,j) + noise(i,j)));
+                                
+            //printf("[%5.2f] ", pArrays[i][j] = rand() % 85 + (noise(i,j) + noise(i,j)));
             fprintf(fp,MASC,pArrays[i][j] = rand() % 85 + (noise(i,j) + noise(i,j)));
+            
         }
-        printf("\n");
+        
+        //printf("\n");
     }
     
+        fclose(fp);
     }
-    return pArrays;
+    
+    //return pArrays;
 }
 
 
